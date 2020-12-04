@@ -7,13 +7,13 @@ int main()
     for (i = 0; i < n; i++)
     {
         for (j = 0; j < n - i; j++)
-            printf("*");
+            printf("1");
         printf("\n");
     }
     for (i = n-1; i >=0; i--)
     {
-        for (j = n-i+1; j >=0; j--)
-            printf("*");
+        for (j = n-i+1; j >1; j--)
+            printf("1");
         printf("\n");
     }
     printf("\n");
