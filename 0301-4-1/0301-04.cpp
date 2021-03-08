@@ -2,11 +2,10 @@
 using namespace std;
 int runnian(int year)
 {
-	int x;
 	if (year % 100 != 0 && year % 4 == 0 || year % 100 == 0 && year % 400 != 0)
-		x = 1;
-	else x = 0;
-	return x;
+		return 1;
+	else 
+		return 0;
 }
 int main()
 {

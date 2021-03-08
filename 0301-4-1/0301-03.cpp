@@ -9,7 +9,7 @@ int main()
     for (int i = 1; i < 30; i++)
     {
         cin >> a[i];
-        max = a[i] > max ? a[i] : max; 
+        max = a[i] > max ? a[i] : max;  //条件表达式
     }
     cout << "max: " << max << endl;
     return 0;
