@@ -1,20 +1,18 @@
 #include<iostream>
 using namespace std;
-void print(int  n)
+void print(int  a,int b)
 {
-	if(n==1)
-		cout<<"1 ";
-	else
+	if(a<=b)
 	{
-		print(n-1);
-		cout<<n<<" ";
+		cout<<a<<" ";
+		print(a+1,b-1);
+		if(a<b)
+			cout<<b<<" ";
 	}
 	
 }
 int main()
 {
-	int x;
-	cin>>x;
-	print(x);
+	print(5,10);
 	return 0;
 }
