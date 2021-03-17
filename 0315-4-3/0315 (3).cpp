@@ -1,22 +1,24 @@
 #include<iostream>
+#include<cmath>
 using namespace std;
-int d(int a,int b)
+double d(int x1,int y1,int x2,int y2)
 {
-	return b-a;
+	double sdt;
+	dst=sqrt(pow((x1-x2),2)+pow((y1-y2),2));
+	return dst;
 }
-float d(float a,float b)
+double d(double x1,double y1,double x2,double y2)
 {
-	return b-a;
+	double sdt;
+	dst=sqrt(pow((x1-x2),2)+pow((y1-y2),2));
+	return dst;
 }
 int main()
 {
-	int n1,n2;
-	float f1,f2;
-	cout<<"输入两个整数：";
-	cin>>n1>>n2;
-	cout<<"输入两个浮点数：";
-	cin>>f1>>f2;
-	cout<<"两整数点的距离为："<<d(n1,n2)<<endl;
-	cout<<"两浮点数点的距离为："<<d(f1,f2)<<endl;
+	double x1,x2,y1,y2,result;
+	cout<<"输入两点坐标：";
+	cin>>x1>>y1>>x2>>y2;
+	result=d(x1,y1,x2,y2);
+	cout<<"两点的距离为："<<result<<endl;
 	return 0;
 }
